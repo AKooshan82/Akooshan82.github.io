@@ -1,14 +1,8 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - AKooshan82
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - AKooshan82/lilac-trio
+  - AKooshan82/Akooshan82.github.io
