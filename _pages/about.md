@@ -2,18 +2,18 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='sharif.ir'>Sharif University</a>, Tehran , Iran.
+subtitle: B.Sc. Electrical Engineering, <a href='https://en.sharif.edu/'>Sharif University of Technology</a>, Tehran, Iran.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Tehran, Iran</p>
+    <p><a href="mailto:amir.hesari82@sharif.edu">amir.hesari82@sharif.edu</a></p>
+    <p><a href="https://github.com/AKooshan82">github.com/AKooshan82</a></p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -22,13 +22,13 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a final-year bachelor student at the EE department of Sharif University  with a focus on RL and Optimization.
+I am a final-year Electrical Engineering student at Sharif University of Technology and a junior AI engineer focused on building useful machine-learning systems, not only training models. My work sits around reinforcement learning, optimization, generative models, LLM tooling, and signal-processing applications.
 
-I previously interned at [CUHK DSP Lab](http://dsp.ee.cuhk.edu.hk/). Right I'm working on Reinforcement Learning used in Legged Robots. I also enjoy reading about different optimization techniques used in RL settings or in general.
+Recently, I worked with Dr. Qiuqiang Kong at the [CUHK DSP Lab](http://dsp.ee.cuhk.edu.hk/) on transfer learning for EEG anomaly detection using Pre-trained Audio Neural Networks. At Sharif, I am working with Dr. Soleymani Baghshah on meta-reinforcement learning methods for fast adaptation in changing environments.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I enjoy projects where careful engineering matters as much as modeling: clean data pipelines, reproducible experiments, and agents that can adapt from limited recent experience. I am especially interested in meta-RL, continual learning, LLM robustness, EEG/signal processing, and optimization methods for learning systems.
