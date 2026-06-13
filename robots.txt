@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://Akooshan82.github.io/sitemap.xml
+Sitemap: https://akooshan82.github.io/sitemap.xml
