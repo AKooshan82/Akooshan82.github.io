@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: research-home
 title: about
 permalink: /
 subtitle: B.Sc. Electrical Engineering, <a href='https://en.sharif.edu/'>Sharif University of Technology</a>, Tehran, Iran.
