@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <!-- Site metadata and the only stylesheet/script. No build step or framework. -->
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Curriculum vitae · Amir Kooshan Fattah Hesari</title>
+    <meta
+      content="Personal website of Amir Kooshan Fattah Hesari, an Electrical Engineering student and junior AI engineer focused on reinforcement learning, LLMs, generative models, and signal-processing applications."
+      name="description"
+    />
+    <meta content="Amir Kooshan Fattah Hesari" name="author" />
+    <meta content="#f6f7fb" name="theme-color" />
+    <link href="https://akooshan82.github.io/cv.html" rel="canonical" />
+    <meta content="website" property="og:type" />
+    <meta content="Curriculum vitae · Amir Kooshan Fattah Hesari" property="og:title" />
+    <meta
+      content="Personal website of Amir Kooshan Fattah Hesari, an Electrical Engineering student and junior AI engineer focused on reinforcement learning, LLMs, generative models, and signal-processing applications."
+      property="og:description"
+    />
+    <meta content="https://akooshan82.github.io/cv.html" property="og:url" />
+    <meta content="https://akooshan82.github.io/photo.jpg" property="og:image" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <script defer="" src="script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a> <canvas aria-hidden="true" id="life-background"></canvas>
+    <!-- Return links lead to the homepage; CV is the current page. -->
+    <header class="site-header">
+      <nav aria-label="Main navigation" class="navigation">
+        <a class="brand" href="./">Amir Kooshan</a>
+        <ul class="nav-links">
+          <li><a href="./">Home</a></li>
+          <li><a href="./#news">News</a></li>
+          <li><a href="./#research">Research</a></li>
+          <li><a href="./#projects">Projects</a></li>
+          <li><a href="cv.html" aria-current="page">CV</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="cv-page" id="main" tabindex="-1">
+      <!-- CV: regenerate both page images when replacing cv.pdf; see README.md. -->
+      <section aria-labelledby="cv-heading" class="content-section panel" id="cv">
+        <p class="eyebrow">Background &amp; experience</p>
+        <h1 id="cv-heading">Curriculum vitae</h1>
+        <p class="cv-intro">Education, research, projects, and technical experience.</p>
+        <div class="cv-summary">
+          <div>
+            <h2>Amir Kooshan Fattah Hesari</h2>
+            <p>Electrical Engineering · Sharif University of Technology</p>
+            <p class="document-meta">Updated May 2026 · PDF · 2 pages</p>
+          </div>
+          <div class="cv-actions">
+            <a class="download-button" download="Amir-Kooshan-Fattah-Hesari-CV.pdf" href="cv.pdf"
+              >Download CV <span aria-hidden="true">↓</span></a
+            >
+            <a href="cv.pdf" rel="noopener" target="_blank"
+              >Open PDF <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a
+            >
+          </div>
+        </div>
+        <!-- Two images in one scroll region work on phones without requiring a PDF plugin. -->
+        <figure class="cv-preview">
+          <div
+            class="cv-scroll"
+            role="region"
+            aria-label="CV preview, two pages. Scroll to read page two."
+            tabindex="0"
+          >
+            <img
+              src="cv-preview.png"
+              width="1082"
+              height="1400"
+              alt="CV page 1 of 2: professional summary, education, research experience, and projects."
+              decoding="async"
+            />
+            <img
+              src="cv-page-2.png"
+              width="1082"
+              height="1400"
+              alt="CV page 2 of 2: remaining projects, awards, technical skills, and languages."
+              decoding="async"
+            />
+          </div>
+          <figcaption>Scroll inside the preview to read both pages. <a href="cv.pdf">Read the PDF</a>.</figcaption>
+        </figure>
+      </section>
+    </main>
+    <!-- FOOTER: contact sits at the right edge of the same content column. -->
+    <footer class="site-footer">
+      <div class="footer-row">
+        <p>© 2026 Amir Kooshan Fattah Hesari.</p>
+        <a class="get-in-touch" href="mailto:amir.hesari82@sharif.edu">Get in touch ↗</a>
+      </div>
+      <button aria-pressed="false" class="motion-toggle" hidden type="button">Pause background</button>
+    </footer>
+  </body>
+</html>

@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <!-- Site metadata and the only stylesheet/script. No build step or framework. --><head>
+  <!-- Site metadata and the only stylesheet/script. No build step or framework. -->
+  <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -31,7 +32,7 @@
   </head>
   <body>
     <a class="skip-link" href="#home">Skip to content</a> <canvas aria-hidden="true" id="life-background"></canvas>
-    <!-- Navigation links point to sections on this page. -->
+    <!-- Section links stay on the homepage; CV opens its own page. -->
     <header class="site-header">
       <nav aria-label="Main navigation" class="navigation">
         <a class="brand" href="#home">Amir Kooshan</a>
@@ -40,7 +41,7 @@
           <li><a href="#news">News</a></li>
           <li><a href="#research">Research</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#cv">CV</a></li>
+          <li><a href="cv.html">CV</a></li>
         </ul>
       </nav>
     </header>
@@ -81,14 +82,14 @@
             </p>
           </div>
           <div aria-label="Contact and profiles" class="contact-links">
-            <a href="#cv">
-              <svg aria-hidden="true" viewbox="0 0 24 24">
+            <a href="cv.html">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M8 13h8M8 17h6"></path>
               </svg>
               <span>CV </span>
             </a>
             <a href="https://github.com/AKooshan82" rel="external nofollow noopener" target="_blank">
-              <svg aria-hidden="true" viewbox="0 0 24 24">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
                 <path
                   d="M9 19c-4.3 1.3-4.3-2.2-6-2.7M15 22v-3.4a3 3 0 0 0-.8-2.3c2.7-.3 5.5-1.3 5.5-6a4.7 4.7 0 0 0-1.3-3.3 4.3 4.3 0 0 0-.1-3.3s-1-.3-3.5 1.3a12 12 0 0 0-6.4 0C6 3.4 5 3.7 5 3.7A4.3 4.3 0 0 0 4.9 7a4.7 4.7 0 0 0-1.3 3.3c0 4.7 2.8 5.7 5.5 6a3 3 0 0 0-.8 2.3V22"
                 ></path>
@@ -96,7 +97,7 @@
               <span>GitHub</span>
             </a>
             <a href="mailto:amir.hesari82@sharif.edu">
-              <svg aria-hidden="true" viewbox="0 0 24 24">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
                 <rect height="14" rx="2" width="18" x="3" y="5"></rect>
                 <path d="m3 6 9 7 9-7"></path>
               </svg>
@@ -248,53 +249,14 @@
           </details>
         </article>
       </section>
-      <!-- CV: replace cv.pdf and regenerate cv-preview.png together; see README.md. -->
-      <section aria-labelledby="cv-heading" class="content-section panel" id="cv">
-        <p class="eyebrow">Background &amp; experience</p>
-        <h2 id="cv-heading">Curriculum vitae</h2>
-        <p class="cv-intro">Education, research, projects, and technical experience.</p>
-        <div class="cv-summary">
-          <div>
-            <h3>Amir Kooshan Fattah Hesari</h3>
-            <p>Electrical Engineering · Sharif University of Technology</p>
-            <p class="document-meta">Updated May 2026 · PDF · 2 pages</p>
-          </div>
-          <div class="cv-actions">
-            <a class="download-button" download="Amir-Kooshan-Fattah-Hesari-CV.pdf" href="cv.pdf"
-              >Download CV <span aria-hidden="true">↓</span></a
-            >
-            <a href="cv.pdf" rel="noopener" target="_blank"
-              >Open PDF <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a
-            >
-          </div>
-        </div>
-        <figure class="cv-preview">
-          <a aria-label="Open the complete two-page CV in a new tab" href="cv.pdf" rel="noopener" target="_blank">
-            <img
-              alt="First-page preview of Amir Kooshan Fattah Hesari’s CV, showing education, research experience, and projects."
-              decoding="async"
-              height="1400"
-              loading="lazy"
-              src="cv-preview.png"
-              width="1082"
-            />
-          </a>
-          <figcaption>Preview · Page 1 of 2. <a href="cv.pdf">Read the full CV</a>.</figcaption>
-        </figure>
-      </section>
     </main>
-    <!-- FOOTER: the contact link opens the visitor’s email app. -->
+    <!-- FOOTER: contact sits at the right edge of the same content column. -->
     <footer class="site-footer">
-      <p><a class="get-in-touch" href="mailto:amir.hesari82@sharif.edu">Get in touch ↗</a></p>
-      <p>© 2026 Amir Kooshan Fattah Hesari.</p>
-      <p>
-        Design inspired by
-        <a href="https://btx0424.github.io/" rel="external nofollow noopener" target="_blank">Botian Xu</a> ·
-        <a href="https://github.com/AKooshan82/Akooshan82.github.io" rel="external nofollow noopener" target="_blank"
-          >Source</a
-        >
-      </p>
-      <button aria-pressed="false" class="motion-toggle" hidden="" type="button">Pause background</button>
+      <div class="footer-row">
+        <p>© 2026 Amir Kooshan Fattah Hesari.</p>
+        <a class="get-in-touch" href="mailto:amir.hesari82@sharif.edu">Get in touch ↗</a>
+      </div>
+      <button aria-pressed="false" class="motion-toggle" hidden type="button">Pause background</button>
     </footer>
   </body>
 </html>
