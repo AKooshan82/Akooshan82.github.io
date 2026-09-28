@@ -1,17 +1,17 @@
 # Amir Kooshan’s website
 
-A small static website at https://akooshan82.github.io/. No framework, packages,
+A small static website at https://akooshan82.github.io/. No framework, package installation,
 build commands, generated folders, or custom GitHub Actions workflows.
 
 ## Files
 
 - `index.html` — homepage: biography, news, research, projects, and contact.
-- `cv.html` — CV page with download links and a scrollable two-page preview.
+- `cv.html` — CV page with download links and an embedded PDF viewer.
 - `styles.css` — styling, with numbered comments for each section.
 - `script.js` — optional navigation highlighting and the animated background.
+- `cv.js` — loads the actual PDF with Mozilla PDF.js (a pinned version from jsDelivr).
 - `photo.jpg` — profile photo.
-- `cv.pdf` — the downloadable two-page CV.
-- `cv-preview.png` and `cv-page-2.png` — the two images in the scrollable CV preview.
+- `cv.pdf` — the CV used by both the live preview and download.
 - `.nojekyll` — tells GitHub Pages to serve the files directly.
 - `.gitignore` — keeps macOS metadata out of Git.
 - `LICENSE` — retained license notice from the original site.
@@ -22,7 +22,7 @@ build commands, generated folders, or custom GitHub Actions workflows.
 Edit the clearly marked sections in `index.html`. Project details expand on the
 homepage. CV links open `/cv.html`; the shared footer keeps contact on the right.
 
-Open `index.html` directly, or serve this folder locally:
+To preview the site, including the PDF viewer, serve this folder locally:
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1
@@ -32,15 +32,13 @@ Visit http://127.0.0.1:8000. Check the page at desktop and mobile widths.
 
 ## Replace the CV
 
-Replace `cv.pdf` and regenerate both preview images with Poppler:
+Replace **only `cv.pdf`**, keeping the same filename, then commit it to `master`.
+The preview renders that PDF directly, so all pages and the download update
+together. No screenshots or image-generation tools are needed.
 
-```sh
-pdftoppm -f 1 -l 1 -singlefile -scale-to 1400 -png cv.pdf cv-preview
-pdftoppm -f 2 -l 2 -singlefile -scale-to 1400 -png cv.pdf cv-page-2
-```
-
-Update the date, page count, and preview image dimensions in
-`cv.html` if they changed. The current CV says “Last updated in May 2026.”
+The embedded viewer uses PDF.js to provide selectable text and scrolling on desktop
+and phones. It needs JavaScript and access to jsDelivr. An “Open PDF” link remains
+available if the viewer cannot load.
 
 ## Publish
 

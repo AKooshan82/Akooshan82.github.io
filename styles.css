@@ -385,27 +385,21 @@ h3 {
 .cv-preview {
   margin: 28px 0 0;
 }
-.cv-scroll {
+.cv-pdf-frame {
+  position: relative;
   height: 75vh;
   height: 75svh;
-  overflow-y: auto;
-  background: #e5e9ef;
   border: 1px solid #d8dfe9;
-  scrollbar-gutter: stable;
+  background: #e5e9ef;
 }
-.cv-scroll:focus-visible {
+.cv-pdf {
+  position: absolute;
+  inset: 0;
+  overflow: auto;
+}
+.cv-pdf:focus-visible {
   outline: 3px solid var(--link);
-  outline-offset: 4px;
-}
-.cv-preview img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border: 1px solid #e5e9ef;
-  background: white;
-}
-.cv-preview img + img {
-  margin-top: 16px;
+  outline-offset: 3px;
 }
 .cv-preview figcaption {
   text-align: center;
