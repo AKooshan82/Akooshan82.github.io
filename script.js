@@ -37,7 +37,7 @@
 
   function draw() {
     context.clearRect(0, 0, window.innerWidth, window.innerHeight);
-    context.fillStyle = "rgba(112, 165, 222, 0.20)";
+    context.fillStyle = "rgba(112, 165, 222, 0.26)";
     for (let y = 0; y < rows; y++) {
       for (let x = 0; x < columns; x++) {
         if (cells[y * columns + x]) context.fillRect(x * cellSize, y * cellSize, cellSize - 1, cellSize - 1);
