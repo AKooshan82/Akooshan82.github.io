@@ -1,18 +1,18 @@
 /* 1. Shared colors, typography, links, and keyboard focus. */
 :root {
   color-scheme: light;
-  --bg: #e7eaf0;
-  --surface: rgb(244 246 250 / 92%);
-  --surface-strong: rgb(240 243 247 / 96%);
-  --ink: #141a24;
-  --heading: #2a3547;
-  --text: #3f4a5c;
-  --muted: #5b6577;
-  --link: #22599a;
-  --link-hover: #1b4a80;
-  --border: #d5dbe4;
-  --border-strong: #c7cfdb;
-  --shadow: #1c2a4020;
+  --bg: #d5dbe5;
+  --surface: rgb(230 234 241 / 94%);
+  --surface-strong: rgb(224 229 237 / 96%);
+  --ink: #0f1520;
+  --heading: #222d3f;
+  --text: #354052;
+  --muted: #4d586a;
+  --link: #1c4f8c;
+  --link-hover: #153c6b;
+  --border: #bfc8d5;
+  --border-strong: #afb9c8;
+  --shadow: #14203530;
 }
 
 * {
@@ -277,23 +277,23 @@ h3 {
 }
 .purple {
   color: #6431a5;
-  background: #f2ebfc;
-  border-color: #dac7f2;
+  background: #e6dcf6;
+  border-color: #cbb5ea;
 }
 .green {
   color: #23673b;
-  background: #eaf7ed;
-  border-color: #bbdfc6;
+  background: #d9eedf;
+  border-color: #a9d2b6;
 }
 .blue {
   color: #21648a;
-  background: #e9f5fc;
-  border-color: #beddec;
+  background: #d8ebf6;
+  border-color: #a9cfe3;
 }
 .pink {
   color: #923569;
-  background: #fcecf4;
-  border-color: #efc8de;
+  background: #f3dcea;
+  border-color: #e3b5cf;
 }
 .entry-header {
   display: flex;
