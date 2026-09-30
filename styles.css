@@ -173,6 +173,12 @@ h1 {
   line-height: 1.8;
   margin: 0 0 17px;
 }
+.biography .bio-note {
+  margin-top: 26px;
+  font-size: 13px;
+  font-style: italic;
+  color: var(--muted);
+}
 .contact-links {
   display: flex;
   flex-wrap: wrap;
